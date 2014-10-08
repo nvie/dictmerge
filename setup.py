@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='dictmerge',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/nvie/dictmerge',
     author='Vincent Driessen',
     author_email='me@nvie.com',
