@@ -11,7 +11,7 @@ setup(
     author_email='me@nvie.com',
     description='Merge dicts without mutating them.',
     long_description=__doc__,
-    pymodules=['dictmerge'],
+    py_modules=['dictmerge'],
     include_package_data=True,
     zip_safe=False,
     platforms='any',
