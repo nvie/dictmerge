@@ -1,5 +1,8 @@
 *.pyc
 
+/.envrc
+/.direnv
+
 dist/
 build/
 *.egg-info/
