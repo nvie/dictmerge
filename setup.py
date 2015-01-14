@@ -7,6 +7,7 @@ setup(
     name='dictmerge',
     version='0.1.1',
     url='https://github.com/nvie/dictmerge',
+    license='BSD',
     author='Vincent Driessen',
     author_email='me@nvie.com',
     description='Merge dicts without mutating them.',
