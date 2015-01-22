@@ -1,3 +1,6 @@
+import collections
+
+
 def dictmerge(*dicts, **kwargs):
     """
     Merges an arbitrary number of dicts and kwargs into a single (new) dict.
@@ -14,6 +17,10 @@ def dictmerge(*dicts, **kwargs):
     """
     result = {}
     for d in dicts:
-        result.update(d)
+        if isinstance(d, collections.Mapping):
+            result.update(d)
+        elif isinstance(d, collections.Iterable):
+            for e in d:
+                result.update(e)
     result.update(kwargs)
     return result
