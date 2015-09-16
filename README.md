@@ -16,7 +16,7 @@ As of Python 3.5 you can use the following syntax for this purpose:
 >>> d2 = {'b': 2}
 >>> {**d1, **d2}
 {'b': 2, 'a': 1}
->>> {**d1, **d2, **{'moar': 3}}
+>>> {**d1, **d2, 'moar': 3}
 {'b': 2, 'moar': 3, 'a': 1}
 ```
 
