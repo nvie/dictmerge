@@ -9,7 +9,19 @@ Merge dicts without mutating them.
 {'a': 1, 'b': 2, 'moar': 3}
 ```
 
-As of Python 3.5 you can use the following syntax for this purpose:
+As of Python 3.9 you can use the following syntax for this purpose:
+
+```pycon
+>>> d1 = {'a': 1}
+>>> d2 = {'b': 2}
+>>> d1 | d2
+{'a': 1, 'b': 2}
+>>> d1 | d2 | {'moar': 3}
+{'a': 1, 'b': 2, 'moar': 3}
+>>>
+```
+
+As of Python 3.5 you can also use the following syntax for this purpose:
 
 ```pycon
 >>> d1 = {'a': 1}
